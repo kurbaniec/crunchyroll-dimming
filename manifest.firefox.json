@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "Crunchyroll Dimming",
+    "description": "Remove screen dimming effect in Crunchyroll",
+    "permissions": [
+      "https://*.crunchyroll.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "https://static.crunchyroll.com/vilos-v2/web/vilos/player.html*"
+        ],
+        "css": [
+          "player.css"
+        ],
+        "all_frames": true,
+        "run_at": "document_start"
+      }
+    ]
+  }
+  

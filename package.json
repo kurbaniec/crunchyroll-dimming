@@ -1,0 +1,19 @@
+{
+  "name": "crunchyroll-dimming",
+  "version": "1.0.0",
+  "description": "Remove screen dimming effect in Crunchyroll",
+  "main": "  ",
+  "scripts": {
+    "build:chrome": "mkdir -p builds && cp manifest.chrome.json manifest.json && git add -A && stashName=`git stash create` && git archive --format=zip --output=builds/crunchyroll-dimming-chrome.zip $stashName && rm manifest.json",
+    "build:firefox": "mkdir -p builds && cp manifest.firefox.json manifest.json && git add -A && stashName=`git stash create` && git archive --format=zip --output=builds/crunchyroll-dimming-firefox.zip $stashName && rm manifest.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurbaniec/crunchyroll-dimming.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kurbaniec/crunchyroll-dimming/issues"
+  },
+  "homepage": "https://github.com/kurbaniec/crunchyroll-dimming#readme"
+}
